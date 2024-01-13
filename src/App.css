@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Annie Use Your Telescope';
+  src: url('../public/fonts/AnnieUseYourTelescope-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*Style for the main app*/
 .App {
   text-align: center;
+  font-family: 'Annie Use Your Telescope', 'Segoe UI', 'Arial';
+  letter-spacing: 3px;
 }
 
 /*Style for the header in the main app*/
@@ -17,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 3vmin); /* was 10 + 2vmin*/
   color: white;
 }
 
@@ -32,24 +41,3 @@
 .App-link {
   color: #61dafb;
 }
-
-/*Style for the navigation bar's unordered list elements*/
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/*Style for the navigation bar's list item elements*/
-nav li {
-  display: inline;
-  margin-right: 10px;
-}
-
-/*Style for the navigation bar's link elements*/
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-

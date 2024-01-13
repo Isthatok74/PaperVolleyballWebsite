@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "./Filters.css";
+
 function ImageLink(props)
 {
     var iconHeight = props.height;
@@ -17,6 +19,7 @@ function ImageLink(props)
           <img 
             src={props.icon} 
             alt="Icon" 
+            class="filter-white"
             height={iconHeight.toString()}
           />
         </a>
