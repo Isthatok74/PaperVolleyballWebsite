@@ -16,7 +16,7 @@ function ContentHome()
             <p>↑ Follow us to get notified ↑</p>
         </div>
         <div className="Features">
-            <p>Features</p>
+            <p><b>- Features -</b></p>
         </div>
         </>
     );
