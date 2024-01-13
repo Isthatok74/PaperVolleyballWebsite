@@ -3,7 +3,7 @@ import React from "react";
 function ContentAbout()
 {
     return (
-        <div>
+        <div class="text-left-align">
           <h1>About</h1>
           <h3>Who did this?</h3>
           <p>Paper Volleyball was developed solely by some guy who loves two things: volleyball and coding.</p>

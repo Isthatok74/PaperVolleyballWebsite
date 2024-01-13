@@ -27,13 +27,6 @@ nav a {
     background-color: #224461;
 }
 
-/*some alignment styles*/
-.left_align {
-    float: left;
-}
-.right_align{
-    float: right;
-}
 /* Clear the float after the right-aligned links */
 .clearfix::after {
     content: '';

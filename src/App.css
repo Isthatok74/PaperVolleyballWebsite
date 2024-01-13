@@ -5,11 +5,18 @@
   font-style: normal;
 }
 
+
 /*Style for the main app*/
 .App {
   text-align: center;
   font-family: 'Annie Use Your Telescope', 'Segoe UI', 'Arial';
   letter-spacing: 3px;
+}
+
+/*for elements that will be left-aligned*/
+.text-left-align {
+  text-align: left;
+  padding: 25px;
 }
 
 /*Style for the header in the main app*/
@@ -26,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(12px + 3vmin); /* was 10 + 2vmin*/
+  font-size: calc(11px + 2vmin); /* original was 10 + 2vmin*/
   color: white;
 }
 
@@ -40,4 +47,12 @@
 /*Style for links in the app*/
 .App-link {
   color: #61dafb;
+}
+
+/*some alignment styles*/
+.left_align {
+  float: left;
+}
+.right_align{
+  float: right;
 }
