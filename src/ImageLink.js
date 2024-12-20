@@ -5,32 +5,52 @@ import "./Filters.css";
 
 function ImageLink(props)
 {
-    var iconHeight = props.height;
-    var iconLink = props.link;
-
-    return ( 
-    <>
-        <a
-          className="App-link"
-          href={iconLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+    // for empty link, don't create a link and grey out the icon
+    if (props.link === '') {
+      return ( 
+      <>
           <img 
-            src={props.icon} 
+            src={props.image} 
             alt="Icon" 
-            class="filter-white"
-            height={iconHeight.toString()}
+            class="filter-light-gray"
+            height={ props.height.toString()}
+            title={props.hover}
           />
-        </a>
-    </> 
-    );
+      </> 
+      );
+    } 
+    
+    // link exists, render the icon in white and make it clickable
+    else {
+      return ( 
+      <>
+          <a
+            className="App-link"
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={props.hover}
+          >
+            <img 
+              src={props.image} 
+              alt="Icon" 
+              class="filter-white"
+              height={ props.height.toString()}
+              title={props.hover}
+            />
+          </a>
+      </> 
+      );
+    }
+
 }
 
 ImageLink.propTypes = 
 {
   height: PropTypes.number.isRequired,
-  link: PropTypes.string
+  image: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  hover: PropTypes.string,
 };
 
 export default ImageLink;

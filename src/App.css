@@ -1,6 +1,14 @@
+
+@font-face {
+  font-family: 'Shadows Into Light Two';
+  src: url('../public/fonts/ShadowsIntoLightTwo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Annie Use Your Telescope';
-  src: url('../public/fonts/AnnieUseYourTelescope-Regular.ttf') format('ttf');
+  src: url('../public/fonts/AnnieUseYourTelescope-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +17,7 @@
 /*Style for the main app*/
 .App {
   text-align: center;
-  font-family: 'Annie Use Your Telescope', 'Segoe UI', 'Arial';
+  font-family: 'Shadows Into Light Two', 'Segoe UI', 'Arial';
   letter-spacing: 3px;
 }
 

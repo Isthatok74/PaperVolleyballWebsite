@@ -11,11 +11,11 @@ function IconLinks(props)
 
     return ( 
       <ul className="icon-list">
-        <li className="icon-padding"><ImageLink height={iconHeight} icon={Icons.iconSteam} link="https://react.dev//"/></li>
-        <li className="icon-padding"><ImageLink height={iconHeight} icon={Icons.iconYoutube} link="https://react.dev//"/></li>
-        <li className="icon-padding"><ImageLink height={iconHeight} icon={Icons.iconInstagram} link="https://react.dev//"/></li>
-        <li className="icon-padding"><ImageLink height={iconHeight} icon={Icons.iconFacebook} link="https://react.dev//"/></li>
-        <li className="icon-padding"><ImageLink height={iconHeight} icon={Icons.iconEmail} link="https://react.dev//"/></li>
+        <li className="icon-padding"><ImageLink height={iconHeight} hover="Steam page coming soon!" image={Icons.iconSteam} link=""/></li>
+        <li className="icon-padding"><ImageLink height={iconHeight} hover="Click to follow Youtube link"  image={Icons.iconYoutube} link="https://www.youtube.com/@PaperVolleyball"/></li>
+        <li className="icon-padding"><ImageLink height={iconHeight} hover="Instagram page coming soon!" image={Icons.iconInstagram} link=""/></li>
+        <li className="icon-padding"><ImageLink height={iconHeight} hover="Facebook page coming soon!" image={Icons.iconFacebook} link=""/></li>
+        <li className="icon-padding"><ImageLink height={iconHeight} hover="Click to send an email" image={Icons.iconEmail} link="mailto:papervolleyballdev@gmail.com"/></li>
       </ul>
     );
 }
