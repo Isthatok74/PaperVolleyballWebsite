@@ -4,16 +4,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// note: paddingBottom = 1 - videoHeight/videoWidth
 const YoutubeEmbed = ({ embedId }) => (
-  <div className="video-responsive">
+  <div className="video-responsive" style={{ width: '95%', margin: '0 auto', position: 'relative', paddingBottom: '46%' }}> 
     <iframe
-      width="853"
-      height="480"
-      src={`https://www.youtube.com/embed/${embedId}`}
-      frameBorder="0"
+      width="100%"
+      height="100%"
+      src={`https://www.youtube.com/embed/${embedId}?autoplay=1&vq=hd1080`}
+      style={{ border: 'none', position: 'absolute', top: 0, left: 0 }}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
-      title="Embedded youtube"
+      title="Embedded youtube video"
     />
   </div>
 );

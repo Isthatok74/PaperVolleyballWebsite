@@ -6,8 +6,18 @@ import './App.css'
 // A display of a feature along with a description
 function FeatureItem(props)
 {
-    const imgJSX = <><img src={props.imagesrc} alt=""></img></>
-    const fullJSX = <>{props.text}<p/>{imgJSX}</>
+    const imgJSX = <>
+        <img 
+            src={props.imagesrc} 
+            alt="" 
+            style={{
+                width: '75%',
+                maxWidth: '800px',
+            }}
+        >
+        </img>
+    </>
+    const fullJSX = <>{props.text}<p/>{imgJSX}<p/><br/></>
 
     return (
         <>

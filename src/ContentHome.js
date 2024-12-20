@@ -17,12 +17,15 @@ function ContentHome()
             <p>Tentative Release: <b>2026</b></p>
             <IconLinks height={60}/>
             <p>↑ Follow us to get notified ↑</p>
+            <br/>
         </div>
         <div className="Features">
             <h1>- Features -</h1>
-            <FeatureItem imagesrc={ContentImages.imgQuick1x1} text="Set up the perfect attack!"/>
-            <FeatureItem imagesrc={ContentImages.imgQuick1x1} text="Play in increasingly difficult tournaments!"/>
-            <FeatureItem imagesrc={ContentImages.imgQuick1x1} text="Play against friends!"/>
+            <FeatureItem imagesrc={ContentImages.imgAttack}text="Set up the perfect attack!"/>
+            <FeatureItem imagesrc={ContentImages.imgLobby} text="Play against friends!"/>
+            <FeatureItem imagesrc={ContentImages.imgAiTech} text="...or against smart AI"/>
+            <FeatureItem imagesrc={ContentImages.imgCustomization} text="Customize and level up your character"/>
+            <FeatureItem imagesrc={ContentImages.imgAngle} text="Ball angle and speed within your control"/>
         </div>
         <div>
             <p>Click <a href={RouteNames.ABOUT} class="filter-white">here</a> to learn more about the game!</p>
