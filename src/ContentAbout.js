@@ -3,7 +3,10 @@ import React from "react";
 function ContentAbout()
 {
     return (
-        <div class="text-left-align">
+        <div 
+         class="text-left-align"
+         style={{ width: '60%', margin: '0 auto'}}
+        >
           <h1>About</h1>
           <br/>
 
