@@ -15,7 +15,8 @@ You can also run `npm test` to run the unit tests, although the app is so small 
 This website is configured to automatically publish on Github pages whenever a push is made to the main branch.\
 The built app should be placed in the `docs\` folder. As such, a batch script `.\build.bat` was written to automatically call `npm run build` and move the files into the `docs\` folder.
 
-# Appendix
+<details>
+<summary># Appendix</summary>
 
 At the time of writing, I'm still fairly new to React. So the following information may be of use to me in the future and I will keep it here.
 
@@ -87,3 +88,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
