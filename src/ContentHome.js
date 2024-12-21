@@ -5,6 +5,7 @@ import YoutubeEmbed from "./YoutubeEmbed";
 import FeatureItem from "./FeatureItem";
 import ContentImages from "./img";
 import RouteNames from './routes';
+import {Link} from 'react-router-dom';
 
 // The contents of the home page
 function ContentHome()
@@ -28,7 +29,7 @@ function ContentHome()
             <FeatureItem imagesrc={ContentImages.imgAngle} text="Ball angle and speed within your control"/>
         </div>
         <div>
-            <p>Click <a href={RouteNames.ABOUT} class="filter-white">here</a> to learn more about the game!</p>
+            <p>Click <Link to={RouteNames.ABOUT} class="filter-white">here</Link> to learn more about the game!</p>
             <br/>
         </div>
         </>
