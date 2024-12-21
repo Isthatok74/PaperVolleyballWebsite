@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Summary
+
+This is a draft, static website developed using React (Javascript) which will be used to present information about and promote the Paper Volleyball game, which will hopefully released on Steam in 2026 following the completion of development, incorporation and marketing phases.
+
+# Self-Onboarding
+
+At the time of writing, I'm still fairly new to React. So the following information may be of use to me in the future and I will keep it here.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
