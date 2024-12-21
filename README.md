@@ -17,6 +17,7 @@ The built app should be placed in the `docs\` folder. As such, a batch script `.
 
 <details>
 <summary>Additional information</summary>
+
 # Appendix
 
 At the time of writing, I'm still fairly new to React. So the following information may be of use to me in the future and I will keep it here.
