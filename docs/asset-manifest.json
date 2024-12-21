@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PaperVolleyballWebsite/static/css/main.b4aee53f.css",
+    "main.css": "/PaperVolleyballWebsite/static/css/main.d3915d12.css",
     "main.js": "/PaperVolleyballWebsite/static/js/main.64574035.js",
     "static/js/787.af35cb8d.chunk.js": "/PaperVolleyballWebsite/static/js/787.af35cb8d.chunk.js",
     "static/media/customization.gif": "/PaperVolleyballWebsite/static/media/customization.c7593dfcfe9ffff22669.gif",
@@ -16,12 +16,12 @@
     "static/media/iconYoutube.svg": "/PaperVolleyballWebsite/static/media/iconYoutube.e71ceab34cac08397aca81402e93c9ba.svg",
     "static/media/iconFacebook.svg": "/PaperVolleyballWebsite/static/media/iconFacebook.9d8980817d35c2617cf1ebb5a833369a.svg",
     "static/media/iconEmail.svg": "/PaperVolleyballWebsite/static/media/iconEmail.1932b5ea0e8fea59ef73cc1d4ffc63bb.svg",
-    "main.b4aee53f.css.map": "/PaperVolleyballWebsite/static/css/main.b4aee53f.css.map",
+    "main.d3915d12.css.map": "/PaperVolleyballWebsite/static/css/main.d3915d12.css.map",
     "main.64574035.js.map": "/PaperVolleyballWebsite/static/js/main.64574035.js.map",
     "787.af35cb8d.chunk.js.map": "/PaperVolleyballWebsite/static/js/787.af35cb8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4aee53f.css",
+    "static/css/main.d3915d12.css",
     "static/js/main.64574035.js"
   ]
 }
