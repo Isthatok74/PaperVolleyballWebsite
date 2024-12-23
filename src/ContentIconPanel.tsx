@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Icons from "./assets/icons";
+import Icons from "./assets/icons/index.ts";
 import ImageLink from "./ImageLink.tsx";
 
 // define input for the icon links panel
@@ -8,7 +8,7 @@ interface iconLinksProps {
 }
 
 // returns the panel as a component
-function IconLinksPanel(props: iconLinksProps): JSX.Element
+function ContentIconPanel(props: iconLinksProps): JSX.Element
 {
     return ( 
       <IconList>
@@ -45,4 +45,4 @@ const IconListItem = styled.li`
     }
 `
 
-export default IconLinksPanel;
+export default ContentIconPanel;

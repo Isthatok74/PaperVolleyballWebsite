@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import IconLinksPanel from "./IconLinksPanel";
+import ContentIconPanel from "./ContentIconPanel";
 import YoutubeEmbed from "./YoutubeEmbed";
 import FeatureItem from "./FeatureItem";
 import ContentImages from "./assets/img";
@@ -26,7 +26,7 @@ function OverviewSection(): JSX.Element { return <>
         <p>A 2D volleyball game playable with friends or versus AI</p>
         <YoutubeEmbed embedId="y5-AyolVdQk" />
         <p>Tentative Release: <b>2026</b></p>
-        <IconLinksPanel height={56}/>
+        <ContentIconPanel height={56}/>
         <p>↑ Follow us to get notified ↑</p>
         <br/>
     </div>
