@@ -14,7 +14,7 @@ if not exist "docs" (
 )
 
 REM Move the contents of the build folder to the docs folder, replacing existing files
-xcopy "build\*" "docs\" /s /e /y
+xcopy "dist\*" "docs\" /s /e /y
 
 REM Confirm completion
 echo Files moved successfully to the docs folder.
