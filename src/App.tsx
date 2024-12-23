@@ -1,10 +1,10 @@
-import './App.css';
+import styled, { createGlobalStyle } from 'styled-components';
 import { HashRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
 
 import RouteNames from './routes';
 
-import NavBar from './pkg/navBar/NavBar';
-import Footer from './Footer';
+import ContentNavBar from './ContentNavBar';
+import ContentFooter from './ContentFooter';
 
 import ContentHome from './ContentHome';
 import ContentAbout from './ContentAbout';
@@ -13,28 +13,77 @@ import ContentDonate from './ContentDonate';
 function App() : JSX.Element {
 
   return (
-    <Router>
-    <div className="App">
+    <Router> 
+    <RootContainer>
+      
+      {/*Apply some global styling*/}
+      <GlobalStyles />
 
-       <header className="App-header">
-        <NavBar/>
-      </header>
+      {/*Define the header across the whole app*/}
+      <AppHeader>
+        <ContentNavBar/>
+      </AppHeader>
 
-      <main className="App-main">
+      {/*The main content of the app is defined here*/}
+      <AppMain>
         <Routes>
             <Route path={RouteNames.ABOUT} element={<ContentAbout/>} />
             <Route path={RouteNames.DONATE} element={<ContentDonate/>} />
             <Route path={RouteNames.HOME} element={<ContentHome/>} />
             <Route path="*" element={<Navigate to={RouteNames.HOME}/>} /> 
         </Routes>
-      </main>
+      </AppMain>
 
-      <footer className="App-footer">
-        <Footer/>
-      </footer>
-    </div>
+      {/*Define the footer across the whole app*/}
+      <AppFooter>
+        <ContentFooter/>
+      </AppFooter>
+
+    </RootContainer>
     </Router>
   );
 }
+
+// Root container styles
+const RootContainer = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+`;
+
+// Global styles to reset default margins
+const GlobalStyles = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+  }
+`;
+
+// styling for the header bar
+const AppHeader = styled.header`
+  background-color: #333;
+  padding: 1rem;
+`
+
+// styling for the footer bar
+const AppFooter = styled.footer`
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+`
+
+// styling applied to the main content
+const AppMain = styled.main`
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(9px + 2vmin); /* original was 10 + 2vmin*/
+  color: white;
+  text-align: center;
+`
 
 export default App;

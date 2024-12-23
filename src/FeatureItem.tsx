@@ -1,5 +1,3 @@
-import './App.css'
-
 interface FeatureItemProps {
     imgsrc: string;
     caption: string;
@@ -26,7 +24,7 @@ function FeatureItem(props: FeatureItemProps) : JSX.Element
         ></img><p/>
         
         {/* Add some more vertical spacing*/}
-        <br/><p/>
+        <br/>
 
         </div> 
         </>
