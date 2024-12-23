@@ -1,29 +1,14 @@
-
-@font-face {
-  font-family: 'Shadows Into Light Two';
-  src: url('../public/fonts/ShadowsIntoLightTwo-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Annie Use Your Telescope';
-  src: url('../public/fonts/AnnieUseYourTelescope-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*Style for the main app*/
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  font-family: 'Shadows Into Light Two', 'Annie Use Your Telescope', 'Segoe UI', 'Arial';
-  letter-spacing: 3px;
 }
 
 /*for elements that will be left-aligned*/
 .text-left-align {
   text-align: left;
-  padding: 25px;
+  padding: 24px;
 }
 
 /*Style for the header in the main app*/
@@ -40,7 +25,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(11px + 2vmin); /* original was 10 + 2vmin*/
+  font-size: calc(10px + 2vmin); /* original was 10 + 2vmin*/
   color: white;
 }
 
@@ -49,11 +34,6 @@
   background-color: #333;
   color: white;
   padding: 1rem;
-}
-
-/*Style for links in the app*/
-.App-link {
-  color: #61dafb;
 }
 
 /*some alignment styles*/

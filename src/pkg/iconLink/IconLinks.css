@@ -1,0 +1,25 @@
+
+.icon-list {
+    list-style: none;
+    padding: 12px;
+    margin: 4px;
+}
+
+.icon-padding {
+    display: inline;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/* copied from vite, may be useful*/
+.logo {
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
