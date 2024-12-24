@@ -13,6 +13,11 @@ if not exist "docs" (
     mkdir "docs"
 )
 
+REM Delete all previously existing files in the docs folder
+echo Deleting old files in the docs folder...
+rmdir /s /q "docs"
+mkdir "docs"
+
 REM Move the contents of the build folder to the docs folder, replacing existing files
 xcopy "dist\*" "docs\" /s /e /y
 
