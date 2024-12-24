@@ -46,10 +46,9 @@ function App() : JSX.Element {
 
 // Root container styles
 const RootContainer = styled.div`
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  min-height: 100vh;
 `;
 
 // Global styles to reset default margins
@@ -76,12 +75,11 @@ const AppFooter = styled.footer`
 // styling applied to the main content
 const AppMain = styled.main`
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(9px + 2vmin); /* original was 10 + 2vmin*/
+  font-size: calc(9px + 2vmin);
   color: white;
   text-align: center;
 `

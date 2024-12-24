@@ -47,7 +47,7 @@ function FeatureSection(): JSX.Element { return <>
 // the section of the home page that allows user to move to the About page if they want to learn even more
 function DetailsSection(): JSX.Element {return <>
     <div>
-        <p>Click <Link to={RouteNames.ABOUT} className="filter-white">here</Link> to learn more about the game!</p>
+        <p>Click <Link to={RouteNames.ABOUT}>here</Link> to learn more about the game!</p>
         <br/>
     </div>
 </>}

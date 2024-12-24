@@ -37,7 +37,7 @@ const NavUnorderedList = styled.ul `
 const NavBarItem = styled.li<{$alignLeft?: boolean}>`
     display: inline;
     margin-left: 4px;
-    margin-right: 24px;
+    margin-right: 16px;
     height: 32px;
     line-height: 32px;
 
