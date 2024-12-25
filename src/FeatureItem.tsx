@@ -18,7 +18,7 @@ function FeatureItem(props: FeatureItemProps) : JSX.Element
             src={props.imgsrc} 
             alt="" 
             style={{
-                width: '60%',
+                width: '90%',
                 maxWidth: '800px',
             }}
         ></img><p/>
