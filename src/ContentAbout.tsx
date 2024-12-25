@@ -4,8 +4,6 @@ function ContentAbout(): JSX.Element
 {
     return (
         <ContentTextSection>
-          <h1>About</h1>
-
           <h2>Who made this?</h2>
           <p>Paper Volleyball is a passion project developed solely by a simple man who delights greatly in two things: volleyball and coding.</p>
           

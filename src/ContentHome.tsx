@@ -60,7 +60,6 @@ const GameTitle = styled.h1 `
 
 // some formatting for this container
 const HomeContentContainer = styled.div`
-  padding: 24px;
   width: 100%;
   margin: 0 auto;
 `
