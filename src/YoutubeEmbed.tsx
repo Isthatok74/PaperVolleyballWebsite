@@ -22,9 +22,10 @@ const YoutubeEmbed = (props : YoutubeEmbedProps): JSX.Element => (
 // formatting for the actual frame containing the embed
 const YoutubeEmbedContainer = styled.div`
   width: 75%;
+  max-width: 800px;
+  aspect-ratio: 1920/1040;  /* This maintains the original dimensions of the video */
   margin: 0 auto;
   position: relative;
-  padding-bottom: 40.63655%;
 `
 
 export default YoutubeEmbed;

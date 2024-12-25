@@ -19,7 +19,7 @@ function FeatureItem(props: FeatureItemProps) : JSX.Element
             alt="" 
             style={{
                 width: '60%',
-                //maxWidth: '800px', // this is causing issues, somehow entire parent is restrained too
+                maxWidth: '800px',
             }}
         ></img><p/>
         

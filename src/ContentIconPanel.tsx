@@ -4,7 +4,7 @@ import ImageLink from "./ImageLink.tsx";
 
 // define input for the icon links panel
 interface iconLinksProps {
-  height: number;
+  height: string;
 }
 
 // returns the panel as a component

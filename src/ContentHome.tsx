@@ -26,7 +26,7 @@ function OverviewSection(): JSX.Element { return <>
         <p>A 2D volleyball game playable with friends or versus AI</p>
         <YoutubeEmbed embedId="y5-AyolVdQk" />
         <p>Tentative Release: <b>2026</b></p>
-        <ContentIconPanel height={56}/>
+        <ContentIconPanel height="48px"/>
         <p>↑ Follow us to get notified ↑</p>
         <br/>
     </div>
@@ -55,7 +55,7 @@ function DetailsSection(): JSX.Element {return <>
 // some formatting for this container
 const HomeContentContainer = styled.div`
   padding: 24px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 `
 

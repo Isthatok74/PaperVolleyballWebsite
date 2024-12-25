@@ -4,7 +4,7 @@ import LinkExternal from "./LinkExternal"
 interface ImageLinkProps {
   image: string;
   hover?: string;
-  height: number;
+  height: string;
   link?: string;
 }
 function ImageLink(props : ImageLinkProps): JSX.Element
@@ -13,7 +13,7 @@ function ImageLink(props : ImageLinkProps): JSX.Element
     const imageBaseProps = {
       src: props.image,
       alt: 'Icon',
-      height: props.height.toString(),
+      height: props.height,
       title: props.hover,
     };
 
