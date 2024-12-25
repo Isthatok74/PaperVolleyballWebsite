@@ -54,8 +54,9 @@ function DetailsSection(): JSX.Element {return <>
 
 // some formatting for this container
 const HomeContentContainer = styled.div`
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 24px;
+  width: 95%;
+  margin: 0 auto;
 `
 
 export default ContentHome;
