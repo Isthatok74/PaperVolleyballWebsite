@@ -9,23 +9,15 @@ function FeatureItem(props: FeatureItemProps) : JSX.Element
     return (
         <>
         <div>
-
-        {/* Show the caption */}
-        {props.caption}<p/>
-
-        {/* Show the image */}
-        <img 
-            src={props.imgsrc} 
-            alt="" 
-            style={{
-                width: '90%',
-                maxWidth: '800px',
-            }}
-        ></img><p/>
-        
-        {/* Add some more vertical spacing*/}
-        <br/>
-
+            <br/><p>{props.caption}</p>
+            <p><img 
+                src={props.imgsrc} 
+                alt="" 
+                style={{
+                    width: '90%',
+                    maxWidth: '800px',
+                }}
+            ></img></p>
         </div> 
         </>
     );
