@@ -99,7 +99,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Drop shadow */
   letter-spacing: 6px;  /* Increase character spacing */
 `,Vv=Je.div`
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 `,Bd=Je.div`
   text-align: justify;
@@ -129,7 +129,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(9px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
   text-align: center;
 `;Yh.createRoot(document.getElementById("root")).render(L.jsx(_.StrictMode,{children:L.jsx(Kv,{})}));

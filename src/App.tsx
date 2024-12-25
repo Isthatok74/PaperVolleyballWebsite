@@ -79,7 +79,7 @@ const AppMain = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(9px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
   text-align: center;
 `
