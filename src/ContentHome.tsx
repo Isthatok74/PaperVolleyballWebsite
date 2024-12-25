@@ -23,6 +23,7 @@ function ContentHome(): JSX.Element
 // the section of the home page that the user will first see
 function OverviewSection(): JSX.Element { return <>
     <div>
+        <GameTitle>PAPER VOLLEYBALL</GameTitle>
         <p>A 2D volleyball game playable with friends or versus AI</p>
         <YoutubeEmbed embedId="y5-AyolVdQk" />
         <p>Tentative Release: <b>2026</b></p>
@@ -51,6 +52,11 @@ function DetailsSection(): JSX.Element {return <>
         <br/>
     </div>
 </>}
+
+const GameTitle = styled.h1 `
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Drop shadow */
+  letter-spacing: 6px;  /* Increase character spacing */
+`
 
 // some formatting for this container
 const HomeContentContainer = styled.div`

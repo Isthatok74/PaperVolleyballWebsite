@@ -1,12 +1,12 @@
 // Provide global values for the sublinks in the routes for the webpage
 const ROUTE_HOME = '/';
 const ROUTE_ABOUT = '/about';
-const ROUTE_DONATE = '/donate';
+const CONTRIBUTE = '/contribute';
 
 // Export as a package
 const RouteNames = {
     HOME: ROUTE_HOME,
     ABOUT: ROUTE_ABOUT,
-    DONATE: ROUTE_DONATE,
+    CONTRIBUTE: CONTRIBUTE,
 };
 export default RouteNames;

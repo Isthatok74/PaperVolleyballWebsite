@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
 import { NavLink } from "react-router-dom";
 import RouteNames from "./routes"; 
 
@@ -9,10 +9,9 @@ function ContentNavBar() : JSX.Element
   return (<>
     <nav>
       <NavUnorderedList>
-        <NavBarItem $alignLeft><StyledNavLink to={RouteNames.HOME}>Paper Volleyball</StyledNavLink></NavBarItem>
-        <NavBarItem><StatefulStyledNavLink to={RouteNames.DONATE}>Donate</StatefulStyledNavLink></NavBarItem>
-        <NavBarItem><StatefulStyledNavLink to={RouteNames.ABOUT}>About</StatefulStyledNavLink></NavBarItem>
         <NavBarItem><StatefulStyledNavLink to={RouteNames.HOME}>Home</StatefulStyledNavLink></NavBarItem>
+        <NavBarItem><StatefulStyledNavLink to={RouteNames.ABOUT}>About</StatefulStyledNavLink></NavBarItem>
+        <NavBarItem><StatefulStyledNavLink to={RouteNames.CONTRIBUTE}>Contribute</StatefulStyledNavLink></NavBarItem>
       </NavUnorderedList>
     </nav>
   </>);
@@ -23,38 +22,24 @@ const NavUnorderedList = styled.ul `
   list-style: none;
   padding: 0;
   margin: 0;
-  height: 32px;
-  
-  // Clear the float after the right-aligned links
-  &::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
+  height: 24px;
 `
 
 // wrap li tag with some formatting
-const NavBarItem = styled.li<{$alignLeft?: boolean}>`
+const NavBarItem = styled.li`
     display: inline;
-    margin-left: 4px;
-    margin-right: 16px;
-    height: 32px;
-    line-height: 32px;
-
-    ${props => props.$alignLeft ? css`float: left;` : css`float: right;`}
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 24px;
+    line-height: 24px;
 `
 
 // apply some custom styling to the buttons on this component
-const StyledNavLink = styled(NavLink)`
+const StatefulStyledNavLink = styled(NavLink)`
   color: white;
-`;
-
-// apply some custom styling to the buttons on this component
-const StatefulStyledNavLink = styled(StyledNavLink)`
   &.active {
     color: lightgray;
   }
 `;
-
 
 export default ContentNavBar;

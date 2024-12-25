@@ -8,7 +8,7 @@ import ContentFooter from './ContentFooter';
 
 import ContentHome from './ContentHome';
 import ContentAbout from './ContentAbout';
-import ContentDonate from './ContentDonate';
+import ContentContribute from './ContentContribute';
 
 function App() : JSX.Element {
 
@@ -28,7 +28,7 @@ function App() : JSX.Element {
       <AppMain>
         <Routes>
             <Route path={RouteNames.ABOUT} element={<ContentAbout/>} />
-            <Route path={RouteNames.DONATE} element={<ContentDonate/>} />
+            <Route path={RouteNames.CONTRIBUTE} element={<ContentContribute/>} />
             <Route path={RouteNames.HOME} element={<ContentHome/>} />
             <Route path="*" element={<Navigate to={RouteNames.HOME}/>} /> 
         </Routes>
