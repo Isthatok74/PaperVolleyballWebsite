@@ -1,6 +1,6 @@
 # Summary
 
-This is a draft, static website developed using React (TypeScript) which will be used to present information about and promote the Paper Volleyball game, which will hopefully released on Steam in 2026 following the completion of development, incorporation and marketing phases.
+This is a draft, static website developed using React (TypeScript) which will be used to present information about and promote the Paper Volleyball game, which is planned to be released on Steam and Android/iOS.
 
 # Deployment
 

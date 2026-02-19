@@ -24,9 +24,9 @@ function ContentHome(): JSX.Element
 function OverviewSection(): JSX.Element { return <>
     <div>
         <GameTitle>PAPER VOLLEYBALL</GameTitle>
-        <p>A 2D volleyball game playable with friends or versus AI</p>
+        <p>A 2D volleyball game on mobile and desktop</p>
         <YoutubeEmbed embedId="y5-AyolVdQk" />
-        <p>Tentative Release: <b>2026</b></p>
+        <p>Tentative Release: <b>2026 ~ 2027</b></p>
         <ContentIconPanel height="48px"/>
         <p>↑ Follow us to get notified ↑</p>
         <br/>
@@ -38,9 +38,8 @@ function FeatureSection(): JSX.Element { return <>
     <div>
         <h1>- Features -</h1>
         <FeatureItem imgsrc={ContentImages.imgAttack}caption="Set up the perfect attack!"/>
-        <FeatureItem imgsrc={ContentImages.imgLobby} caption="Play against friends!"/>
-        <FeatureItem imgsrc={ContentImages.imgAiTech} caption="...or against smart AI"/>
         <FeatureItem imgsrc={ContentImages.imgCustomization} caption="Customize and level up your character"/>
+        <FeatureItem imgsrc={ContentImages.imgAiTech} caption="Play against smart AI"/>
         <FeatureItem imgsrc={ContentImages.imgAngle} caption="Ball angle and speed within your control"/>
     </div>
 </>}
