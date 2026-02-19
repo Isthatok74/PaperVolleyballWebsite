@@ -13,7 +13,7 @@ function ContentIconPanel(props: iconLinksProps): JSX.Element
     return ( 
       <IconList>
         <IconListItem><ImageLink height={props.height} hover="Click to join the Discord community!" image={Icons.iconDiscord} link="https://discord.gg/v3dGFCHqnp"/></IconListItem>
-        <IconListItem><ImageLink height={props.height} hover="Click to follow Youtube link"  image={Icons.iconYoutube} link="https://youtu.be/hqgAYDiFLW4"/></IconListItem>
+        <IconListItem><ImageLink height={props.height} hover="Click to follow Youtube link"  image={Icons.iconYoutube} link="https://www.youtube.com/@PaperVolleyball"/></IconListItem>
         <IconListItem><ImageLink height={props.height} hover="Instagram page coming soon!" image={Icons.iconInstagram} link=""/></IconListItem>
         <IconListItem><ImageLink height={props.height} hover="Steam page coming soon!" image={Icons.iconSteam} link=""/></IconListItem>
         <IconListItem><ImageLink height={props.height} hover="Google Play Store page coming soon!" image={Icons.iconPlay} link=""/></IconListItem>
