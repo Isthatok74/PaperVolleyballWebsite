@@ -31,6 +31,7 @@ const IconList = styled.ul`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 `
 
 // format the individual icons in this panel

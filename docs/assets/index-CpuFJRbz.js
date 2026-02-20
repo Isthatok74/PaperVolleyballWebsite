@@ -78,6 +78,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 `,Dn=Ze.li`
     list-style: none;
     padding: 12px;
