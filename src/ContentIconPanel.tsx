@@ -10,11 +10,15 @@ interface iconLinksProps {
 // returns the panel as a component
 function ContentIconPanel(props: iconLinksProps): JSX.Element
 {
+    // when ready to go live:
+    // * https://discord.gg/v3dGFCHqnp
+    // * https://www.youtube.com/@PaperVolleyball
+    // * https://www.instagram.com/papervolleyball/
     return ( 
       <IconList>
-        <IconListItem><ImageLink height={props.height} hover="Join the Discord community!" image={Icons.iconDiscord} link="https://discord.gg/v3dGFCHqnp"/></IconListItem>
-        <IconListItem><ImageLink height={props.height} hover="Subscribe on Youtube!"  image={Icons.iconYoutube} link="https://www.youtube.com/@PaperVolleyball"/></IconListItem>
-        <IconListItem><ImageLink height={props.height} hover="Follow us on Instagram!" image={Icons.iconInstagram} link="https://www.instagram.com/papervolleyball/"/></IconListItem>
+        <IconListItem><ImageLink height={props.height} hover="Join the Discord community!" image={Icons.iconDiscord} link=""/></IconListItem>
+        <IconListItem><ImageLink height={props.height} hover="Subscribe on Youtube!"  image={Icons.iconYoutube} link=""/></IconListItem>
+        <IconListItem><ImageLink height={props.height} hover="Follow us on Instagram!" image={Icons.iconInstagram} link=""/></IconListItem>
         <IconListItem><ImageLink height={props.height} hover="Steam page coming soon!" image={Icons.iconSteam} link=""/></IconListItem>
         <IconListItem><ImageLink height={props.height} hover="Google Play Store page coming soon!" image={Icons.iconPlay} link=""/></IconListItem>
         <IconListItem><ImageLink height={props.height} hover="Apple Store page coming soon!" image={Icons.iconApple} link=""/></IconListItem>
