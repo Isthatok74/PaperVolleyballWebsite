@@ -24,8 +24,9 @@ function ContentHome(): JSX.Element
 function OverviewSection(): JSX.Element { return <>
     <div>
         <GameTitle>PAPER VOLLEYBALL</GameTitle>
-        <p>A 2D volleyball game on mobile and desktop</p>
+        <p>Precision is key. Outsmart AI. Stick-figure roguelite.</p>
         <YoutubeEmbed embedId="hqgAYDiFLW4" />
+        <p>On desktop and mobile.</p>
         <p>Tentative Release: <b>2026 ~ 2027</b></p>
         <ContentIconPanel height="48px"/>
         <p>↑ Follow us to get notified ↑</p>
@@ -56,7 +57,6 @@ const GameTitle = styled.h1 `
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Drop shadow */
   letter-spacing: 6px;  /* Increase character spacing */
 `
-
 // some formatting for this container
 const HomeContentContainer = styled.div`
   width: 95%;
