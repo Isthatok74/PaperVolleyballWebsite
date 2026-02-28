@@ -25,7 +25,7 @@ function OverviewSection(): JSX.Element { return <>
     <div>
         <GameTitle>PAPER VOLLEYBALL</GameTitle>
         <p>Precision is key. Outsmart AI. Stick-figure roguelite.</p>
-        <YoutubeEmbed embedId="hqgAYDiFLW4" />
+        <YoutubeEmbed embedId="QETigzVQ_u4" />
         <p>On desktop and mobile.</p>
         <p>Tentative Release: <b>2026 ~ 2027</b></p>
         <ContentIconPanel height="48px"/>
