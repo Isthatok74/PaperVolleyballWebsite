@@ -9,10 +9,10 @@ function ContentContribute(): JSX.Element
           <p>Testing for the alpha phase is currently invite-only.</p>
 
           <h2>Community</h2>
-          Watch for updates on a community Discord coming soon.
+          <p>Join our <a href="https://discord.gg/GmpUrBUA9" target="_blank" rel="noopener noreferrer">Discord server</a> to get exclusive content and updates!</p>
 
           <h2>Donations</h2>
-          <p>I don't have an official donation platform yet. However, if you wish to contribute unofficially, feel free to <a href="mailto:papervolleyballdev@gmail.com" className="filter-white">send me an email</a>, and I would be grateful to accept any support.</p>
+          <p>I'll set up a donation platform soon!.</p>
         </ContentTextSection>
     );
 }

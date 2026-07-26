@@ -21,13 +21,13 @@ function ContentHome(): JSX.Element
 }
 
 // the section of the home page that the user will first see
+// not necessary if video thumbnail has the game name: <GameTitle>PAPER VOLLEYBALL</GameTitle>
 function OverviewSection(): JSX.Element { return <>
     <div>
-        <GameTitle>PAPER VOLLEYBALL</GameTitle>
-        <p>Precision is key. Outsmart AI. Stick-figure roguelite.</p>
-        <YoutubeEmbed embedId="QETigzVQ_u4" />
+        <p>Stick-figure volleyball simulator and roguelite.</p>
+        <YoutubeEmbed embedId="f-xLuSkhDNg" />
         <p>On desktop and mobile.</p>
-        <p>Tentative Release: <b>2026 ~ 2027</b></p>
+        <p>Release ETA: <b>End of 2026</b></p>
         <ContentIconPanel height="48px"/>
         <p>↑ Follow us to get notified ↑</p>
         <br/>
@@ -53,10 +53,10 @@ function DetailsSection(): JSX.Element {return <>
     </div>
 </>}
 
-const GameTitle = styled.h1 `
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Drop shadow */
-  letter-spacing: 6px;  /* Increase character spacing */
-`
+//const GameTitle = styled.h1 `
+//  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Drop shadow */
+//  letter-spacing: 6px;  /* Increase character spacing */
+//`
 // some formatting for this container
 const HomeContentContainer = styled.div`
   width: 95%;
