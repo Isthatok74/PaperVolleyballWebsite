@@ -22,7 +22,7 @@ function ContentAbout(): JSX.Element
           <p>I also haven't truly started marketing the game yet. Look out for a Steam wishlist soon.</p>
 
           <h2>Business Inquiries</h2>
-          <p><a href="mailto:papervolleyball@gmail.com">papervolleyballdev@gmail.com</a></p>
+          <p><a href="mailto:support@freegiftstudio.ca">support@freegiftstudio.ca</a></p>
         </ContentTextSection>
     );
 }
