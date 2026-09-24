@@ -22,6 +22,8 @@ function ContentAbout(): JSX.Element
           <p>I also haven't truly started marketing the game yet. Look out for a Steam wishlist soon.</p>
 
           <h2>Business Inquiries</h2>
+          <p>Free Gift Studio</p>
+          <p>1001677562 ONTARIO INC</p>
           <p><a href="mailto:support@freegiftstudio.ca">support@freegiftstudio.ca</a></p>
         </ContentTextSection>
     );
