@@ -25,11 +25,9 @@ function ContentHome(): JSX.Element
 function OverviewSection(): JSX.Element { return <>
     <div>
         <p>Stick-figure volleyball simulator and roguelite.</p>
-        <YoutubeEmbed embedId="f-xLuSkhDNg" />
-        <p>On desktop and mobile.</p>
-        <p>Release ETA: <b>End of 2026</b></p>
+        <YoutubeEmbed embedId="kU4L7DWgKIo" />
+        <p>↓ Wishlist it now! ↓</p>
         <ContentIconPanel height="48px"/>
-        <p>↑ Follow us to get notified ↑</p>
         <br/>
     </div>
 </>;}
