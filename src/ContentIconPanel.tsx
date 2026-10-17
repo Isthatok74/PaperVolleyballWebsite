@@ -19,6 +19,7 @@ function ContentIconPanel(props: iconLinksProps): JSX.Element
         <IconListItem><ImageLink height={props.height} hover="Follow us on Instagram!" image={Icons.iconInstagram} link="https://www.instagram.com/papervolleyball/"/></IconListItem>
         <IconListItem><ImageLink height={props.height} hover="Join the Discord community!" image={Icons.iconDiscord} link="https://discord.gg/GmpUrBUA9"/></IconListItem>
         <IconListItem><ImageLink height={props.height} hover="For business inquiries" image={Icons.iconEmail} link="mailto:papervolleyballdev@gmail.com"/></IconListItem>
+        <IconListItem><ImageLink height={props.height} hover="Buy us a coffee!" image={Icons.iconCoffee} link="https://buymeacoffee.com/freegiftstudio"/></IconListItem>
       </IconList>
     );
 }

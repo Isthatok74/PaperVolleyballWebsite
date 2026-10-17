@@ -9,6 +9,7 @@ import iconHome from './iconHome.svg';
 import iconDiscord from './iconDiscord.svg';
 import iconApple from './iconApple.svg';
 import iconPlay from './iconPlay.svg';
+import iconCoffee from './iconCoffee.svg';
 
 const Icons = 
 {
@@ -21,6 +22,7 @@ const Icons =
     iconDiscord,
     iconApple,
     iconPlay,
+    iconCoffee,
 }
 
 export default Icons;
