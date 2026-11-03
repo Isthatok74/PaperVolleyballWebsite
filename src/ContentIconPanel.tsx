@@ -11,52 +11,142 @@ interface iconLinksProps {
 function ContentIconPanel(props: iconLinksProps): JSX.Element
 {
     return ( 
-      <CtaGrid>
-        <CtaGroup>
-          <CtaHeading>Wishlist it now!</CtaHeading>
-          <CtaDescription>Choose your platform</CtaDescription>
-          <IconList>
-            <IconListItem><ImageLink height={props.height} hover="Wishlist it on Steam!" image={Icons.iconSteam} link="https://store.steampowered.com/app/5292050/Paper_Volleyball/"/></IconListItem>
-            <IconListItem><ImageLink height={props.height} hover="Google Play — coming soon!" image={Icons.iconPlay} link=""/></IconListItem>
-            <IconListItem><ImageLink height={props.height} hover="Apple App Store — coming soon!" image={Icons.iconApple} link=""/></IconListItem>
-          </IconList>
-        </CtaGroup>
+      <PanelContainer>
+        <BetaCta
+          href="https://discord.gg/GmpUrBUA9"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Join the Paper Volleyball beta on Discord"
+        >
+          <BetaIcon src={Icons.iconDiscord} alt="" />
+          <BetaCopy>
+            <BetaHeading>Join the Paper Volleyball Beta!</BetaHeading>
+            <BetaDescription>Help test the game, share feedback, and play before release.</BetaDescription>
+          </BetaCopy>
+          <BetaButton>Sign up on Discord <span aria-hidden="true">→</span></BetaButton>
+        </BetaCta>
 
-        <CtaGroup>
-          <CtaHeading>Follow me on socials!</CtaHeading>
-          <CtaDescription>Updates, clips &amp; dev support</CtaDescription>
-          <IconList>
-            <IconListItem><ImageLink height={props.height} hover="Subscribe on YouTube" image={Icons.iconYoutube} link="https://www.youtube.com/@PaperVolleyball"/></IconListItem>
-            <IconListItem><ImageLink height={props.height} hover="Follow me on Instagram!" image={Icons.iconInstagram} link="https://www.instagram.com/papervolleyball/"/></IconListItem>
-            <IconListItem><ImageLink height={props.height} hover="Buy me a coffee!" image={Icons.iconCoffee} link="https://buymeacoffee.com/freegiftstudio"/></IconListItem>
-          </IconList>
-        </CtaGroup>
+        <CtaGrid>
+          <CtaGroup>
+            <CtaHeading>Wishlist it now!</CtaHeading>
+            <CtaDescription>Choose your platform</CtaDescription>
+            <IconList>
+              <IconListItem><ImageLink height={props.height} hover="Wishlist it on Steam!" image={Icons.iconSteam} link="https://store.steampowered.com/app/5292050/Paper_Volleyball/"/></IconListItem>
+              <IconListItem><ImageLink height={props.height} hover="Google Play — coming soon!" image={Icons.iconPlay} link=""/></IconListItem>
+              <IconListItem><ImageLink height={props.height} hover="Apple App Store — coming soon!" image={Icons.iconApple} link=""/></IconListItem>
+            </IconList>
+          </CtaGroup>
 
-        <CtaGroup>
-          <CtaHeading>Join the community!</CtaHeading>
-          <CtaDescription>Chat with us &amp; sign up for the beta</CtaDescription>
-          <IconList>
-            <IconListItem><ImageLink height={props.height} hover="Join the Discord &amp; sign up for the beta!" image={Icons.iconDiscord} link="https://discord.gg/GmpUrBUA9"/></IconListItem>
-          </IconList>
-        </CtaGroup>
+          <CtaGroup>
+            <CtaHeading>Follow me on socials!</CtaHeading>
+            <CtaDescription>Updates, clips &amp; dev support</CtaDescription>
+            <IconList>
+              <IconListItem><ImageLink height={props.height} hover="Subscribe on YouTube" image={Icons.iconYoutube} link="https://www.youtube.com/@PaperVolleyball"/></IconListItem>
+              <IconListItem><ImageLink height={props.height} hover="Follow me on Instagram!" image={Icons.iconInstagram} link="https://www.instagram.com/papervolleyball/"/></IconListItem>
+              <IconListItem><ImageLink height={props.height} hover="Buy me a coffee!" image={Icons.iconCoffee} link="https://buymeacoffee.com/freegiftstudio"/></IconListItem>
+            </IconList>
+          </CtaGroup>
 
-        <CtaGroup>
-          <CtaHeading>Business inquiries</CtaHeading>
-          <CtaDescription>Get in touch by email</CtaDescription>
-          <IconList>
-            <IconListItem><ImageLink height={props.height} hover="Email me for business inquiries" image={Icons.iconEmail} link="mailto:papervolleyballdev@gmail.com"/></IconListItem>
-          </IconList>
-        </CtaGroup>
-      </CtaGrid>
+          <CtaGroup>
+            <CtaHeading>Business inquiries</CtaHeading>
+            <CtaDescription>Get in touch by email</CtaDescription>
+            <IconList>
+              <IconListItem><ImageLink height={props.height} hover="Email me for business inquiries" image={Icons.iconEmail} link="mailto:papervolleyballdev@gmail.com"/></IconListItem>
+            </IconList>
+          </CtaGroup>
+        </CtaGrid>
+      </PanelContainer>
     );
 }
 
-const CtaGrid = styled.div`
+const PanelContainer = styled.div`
     width: min(100%, 960px, calc(100vw - 28px));
     box-sizing: border-box;
     margin: 1.25rem auto 0;
+`
+
+const BetaCta = styled.a`
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 22px 24px;
+    color: white;
+    text-align: left;
+    border: 2px solid #8d96ff;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(88, 101, 242, 0.42), rgba(88, 101, 242, 0.14));
+    box-shadow: 0 0 24px rgba(88, 101, 242, 0.18);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        color: white;
+        transform: translateY(-2px);
+        border-color: #b4baff;
+        box-shadow: 0 8px 30px rgba(88, 101, 242, 0.32);
+    }
+
+    &:focus-visible {
+        outline: 3px solid white;
+        outline-offset: 4px;
+    }
+
+    @media (max-width: 700px) {
+        grid-template-columns: auto 1fr;
+        gap: 14px;
+        padding: 20px;
+    }
+`
+
+const BetaIcon = styled.img`
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(57deg) brightness(107%) contrast(101%);
+
+    @media (max-width: 700px) {
+        width: 52px;
+        height: 52px;
+    }
+`
+
+const BetaCopy = styled.div`
+    min-width: 0;
+`
+
+const BetaHeading = styled.h2`
+    margin: 0;
+    font-size: 1.35em;
+`
+
+const BetaDescription = styled.p`
+    margin: 6px 0 0;
+    font-size: 0.78em;
+    opacity: 0.88;
+`
+
+const BetaButton = styled.span`
+    padding: 11px 16px;
+    white-space: nowrap;
+    font-size: 0.76em;
+    font-weight: bold;
+    color: #202331;
+    border-radius: 10px;
+    background: white;
+
+    @media (max-width: 700px) {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+`
+
+const CtaGrid = styled.div`
+    box-sizing: border-box;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
 
     @media (max-width: 700px) {
