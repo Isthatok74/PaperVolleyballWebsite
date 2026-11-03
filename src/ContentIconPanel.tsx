@@ -27,7 +27,7 @@ function ContentIconPanel(props: iconLinksProps): JSX.Element
         </BetaCta>
 
         <CtaGrid>
-          <CtaGroup>
+          <WishlistGroup>
             <CtaHeading>Wishlist it now!</CtaHeading>
             <CtaDescription>Choose your platform</CtaDescription>
             <IconList>
@@ -35,7 +35,7 @@ function ContentIconPanel(props: iconLinksProps): JSX.Element
               <IconListItem><ImageLink height={props.height} hover="Google Play — coming soon!" image={Icons.iconPlay} link=""/></IconListItem>
               <IconListItem><ImageLink height={props.height} hover="Apple App Store — coming soon!" image={Icons.iconApple} link=""/></IconListItem>
             </IconList>
-          </CtaGroup>
+          </WishlistGroup>
 
           <CtaGroup>
             <CtaHeading>Follow me on socials!</CtaHeading>
@@ -161,6 +161,12 @@ const CtaGroup = styled.section`
     border: 2px solid rgba(255, 255, 255, 0.14);
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.045);
+`
+
+const WishlistGroup = styled(CtaGroup)`
+    border-color: rgba(141, 150, 255, 0.58);
+    background: linear-gradient(145deg, rgba(88, 101, 242, 0.16), rgba(255, 255, 255, 0.055));
+    box-shadow: inset 0 0 24px rgba(88, 101, 242, 0.08), 0 4px 18px rgba(0, 0, 0, 0.12);
 `
 
 const CtaHeading = styled.h2`
