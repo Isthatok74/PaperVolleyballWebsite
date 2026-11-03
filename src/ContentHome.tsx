@@ -26,7 +26,6 @@ function OverviewSection(): JSX.Element { return <>
     <div>
         <p>Stick-figure volleyball simulator and roguelite.</p>
         <YoutubeEmbed embedId="kU4L7DWgKIo" />
-        <p>↓ Wishlist it now! ↓</p>
         <ContentIconPanel height="48px"/>
         <br/>
     </div>
