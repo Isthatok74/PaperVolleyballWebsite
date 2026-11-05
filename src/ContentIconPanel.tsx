@@ -16,11 +16,11 @@ function ContentIconPanel(props: iconLinksProps): JSX.Element
           href="https://discord.gg/v3dGFCHqnp"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Join the Paper Volleyball beta on Discord"
+          aria-label="Join the beta on Discord"
         >
           <BetaIcon src={Icons.iconDiscord} alt="" />
           <BetaCopy>
-            <BetaHeading>Join the Paper Volleyball Beta!</BetaHeading>
+            <BetaHeading>Join the Beta!</BetaHeading>
             <BetaDescription>Help test the game, share feedback, and play before release.</BetaDescription>
           </BetaCopy>
           <BetaButton>Sign up on Discord <span aria-hidden="true">→</span></BetaButton>
