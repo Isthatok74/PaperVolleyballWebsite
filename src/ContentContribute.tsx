@@ -7,13 +7,13 @@ function ContentContribute(): JSX.Element
         <ContentTextSection>
           <h2>Beta Testing</h2>
           <p>
-            <a href="https://discord.gg/v3dGFCHqnp" target="_blank" rel="noopener noreferrer">
+            <a href="https://go.freegiftstudio.ca/papervolleyball/discord/" target="_blank" rel="noopener noreferrer">
               Register for the playtest on Discord!
             </a>
           </p>
 
           <h2>Community</h2>
-          <p>Join our <a href="https://discord.gg/v3dGFCHqnp" target="_blank" rel="noopener noreferrer">Discord server</a> to get exclusive content and updates!</p>
+          <p>Join our <a href="https://go.freegiftstudio.ca/papervolleyball/discord/" target="_blank" rel="noopener noreferrer">Discord server</a> to get exclusive content and updates!</p>
 
           <h2>Donations</h2>
           <p>
