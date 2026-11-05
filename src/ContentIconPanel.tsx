@@ -13,7 +13,7 @@ function ContentIconPanel(props: iconLinksProps): JSX.Element
     return ( 
       <PanelContainer>
         <BetaCta
-          href="https://discord.gg/GmpUrBUA9"
+          href="https://discord.gg/v3dGFCHqnp"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Join the Paper Volleyball beta on Discord"
